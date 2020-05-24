@@ -64,11 +64,11 @@ def run_test_model(layerr=arg):
 	#accuracy
 	pred=model.evaluate(testX,testY)
 	# printing accuracy
-	print("Model Accuracy is :",pred[1]*100)
+	print("Model Accuracy is :",int(pred[1]*100))
 
 	try:
 		f= open("accuracy.txt","w")
-		f.write(str(pred[1]*100))
+		f.write(str(int(pred[1]*100)))
 	except:
 		print("not written")
 	finally:
