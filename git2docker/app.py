@@ -7,7 +7,7 @@ from keras.preprocessing import image
 import json
 
 # load the keras model
-MODEL_PATH = 'model.h5'
+MODEL_PATH = '/root/app/git2docker/model.h5'
 
 
 # Load the model from saved file
